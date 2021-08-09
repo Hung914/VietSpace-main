@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "1bbc4499-b91d-46d2-b0f8-b93ec7f2e5b2",
+		"name": "VietSpace",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Businesses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Businesses",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Businesses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update business",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": \"03b16348-a557-4b8a-9c6f-9d0810d496d0\",\n        \"createdDate\": \"2021-07-12T23:57:17.499549+00:00\",\n        \"updatedDate\": \"2021-07-12T23:57:17.499549+00:00\",\n        \"name\": \"LOI's CABINETS\",\n        \"title\": null,\n        \"description\": \"Loi's cabinet chuyen dong Nha bep, quay ruou, tu am, phong tam, phong giat\",\n        \"description2\": \"GIA CA PHAI CHANG, RE & DEP DO & KHAO GIA MIEN PHI\",\n        \"description3\": null,\n        \"emails\": [],\n        \"phones\": [\n            {\n                \"id\": \"a65aa8ea-6b94-4194-b029-c421b29f48b4\",\n                \"number\": \"089 248 4029\",\n                \"phoneType\": 1,\n                \"description\": null\n            },\n            {\n                \"number\": \"04123 45623\",\n                \"phoneType\": 2,\n                \"description\": null\n            }\n        ],\n        \"addresses\": [\n            {\n                \"id\": \"3eab859e-b1d9-42b3-afaa-183bc3933090\",\n                \"street\": \"Unit 5/13 Oxleigh Drive - Malaga WA 6090\",\n                \"suburb\": \"Malaga\",\n                \"state\": \"WA\",\n                \"postCode\": \"6090\"\n            }\n        ],\n        \"website\": \"loicabinet.com.au\",\n        \"abn\": null\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Businesses/03b16348-a557-4b8a-9c6f-9d0810d496d0",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Businesses",
+						"03b16348-a557-4b8a-9c6f-9d0810d496d0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
